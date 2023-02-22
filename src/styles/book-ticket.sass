@@ -1,0 +1,36 @@
+@import 'config'
+@import 'mixins'
+@import 'overrides'
+
+@import 'primeicons/primeicons.css'
+
+body
+  +reset
+  overflow: hidden
+  width: 100vw
+  height: 100vh
+
+.page
+  +flex-fill
+  width: 100vw
+  height: 100vh
+  overflow: hidden
+  align-items: stretch
+  background-color: rgba($primary, 0.08)
+  aside
+    width: 15rem
+    background: $white
+  > main
+    flex: 1
+    overflow-y: auto
+    padding: $s3 $s
+    .container
+      max-width: 900px
+      margin: 0 auto
+
+
+  .divider
+    width: 100%
+    +border-top
+    margin: $s 0
+    display: inline-block
